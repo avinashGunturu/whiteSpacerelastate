@@ -1,0 +1,36 @@
+.footerContainer {
+    height: 64px;
+    border-top: 2px solid black;
+    padding: 24px;
+}
+.fottermainContainer {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerContainer {
+    display: flex;
+}
+.logoContainer {
+    margin-top: 7px;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {  
+    .fottermainContainer {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .copieWrite {
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 900px) { 
+    .fottermainContainer {
+        flex-direction: column;
+        gap: 32px;
+    }
+}

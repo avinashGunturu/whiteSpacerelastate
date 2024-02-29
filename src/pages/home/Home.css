@@ -1,0 +1,368 @@
+.heromiddleContainer {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap:32px;
+     padding: 120px 0px;
+     width: 60%;
+     margin: auto;
+}
+
+.heromiddleContainer p{
+    margin: 0px;
+}
+
+.heromainHeading {
+    color: #fa3131; 
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 80px;
+    text-align: center;
+}
+
+.herosubHeading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    text-align: center;
+}
+
+.getaCallbackbtn {
+    padding: 16px 32px;
+    background-color: #fa3131;
+    border: 0px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 16px;
+    box-shadow: 0px 0px 4px rgba(red, red, red, 0.2);
+    cursor: pointer;
+}
+
+.mainsmalltxt {
+    color: #fa3131;
+    font-weight: 700;
+}
+
+.ourServicemainCon {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sectionHeadingText {
+    font-size: 84px;
+    color: rgba(0, 0, 0, .24);
+    font-weight: 800; 
+    text-align: center;
+
+}
+
+.sectionSwitchingTabs {
+    background-color: #fff;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+    width: 60%;
+    margin-top: 32px;
+}
+
+.firstSec,.secondSec {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 16px;
+  cursor: pointer;
+}
+.secondSec.active,.firstSec.active {
+  color: #fff;
+  background-color: #fa3131;
+}
+
+.sellersSection ,.buyersSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    box-sizing: border-box;
+    gap: 16px;
+}
+.oterServiceCard {
+    width: 48%;
+    box-sizing: border-box;
+     box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+    border-radius: 16px;
+    min-height: 318px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ourServiceCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 32px;
+}
+
+.cardHeading {
+    font-size: 40px;
+    color: #fa3131;
+    font-weight: 600;
+}
+
+.cardSubHeading {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.borderReddiv {
+    background-color: #fa3131;
+    height: 10px;
+    border-radius: 0px 0px 16px 16px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.mainImageContainer,.mainAssertData {
+    width: 60%;
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.mainImageContainer img {
+    width: 100%;
+}
+.mainAssertData { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 52px;
+}
+.eachAssert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 31%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+    padding: 16px;
+    border-radius: 16px;
+}
+.count {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0px;
+    color: #fa3131;
+}
+
+.assertitle {
+     margin: 0px;
+     font-size: 28px;
+     font-weight: 700;
+     color: #fa3131;
+     text-align: center;
+}
+
+.testmonialsCommon {
+    width: 60%;
+    margin: auto;
+    margin-top: 120px;
+    
+}
+.testmonialSliders {
+    margin-top: 0px;
+    margin-bottom: 64px;
+}
+
+.awssld__content  {
+    background-color: #fff !important;
+}
+
+.awssld__bullets .awssld__bullets--active {
+    background-color: #fa3131 !important;
+}
+
+.awssld__controls button .awssld__controls__arrow-left, .awssld__controls button .awssld__controls__arrow-right {
+    fill: #fa3131 !important;
+}
+
+.eachestmonialwraper {
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, .2);
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.awssld__controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--control-button-width);
+    height: var(--control-button-height);
+    position: absolute;
+    z-index: 10;
+    top: calc(30% -(0.5* var(--control-button-height)));
+    border: none;
+    background-color: var(--control-button-background);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* .awssld__container figure, .awssld__content, .awssld__box {
+    height: 80% !important;
+} */
+
+.testmonislcmt {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.personName,.persondesignatio {
+   font-weight: 700;
+   font-size: 20px;
+   text-align: center;
+}
+.buyersSection .oterServiceCard {
+    min-height: 424px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  
+    .mainContainer,.heromiddleContainer,.ourServicemainCon,.mainImageContainer,.mainAssertData,.testmonialsCommon,.stickybarMain {
+        width: 100%;
+    }
+    .heromiddleContainer {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .heromainHeading {
+        font-size: 48px;
+        line-height: 52px;
+        padding: 10px;
+    }
+    .herosubHeading {
+        font-size: 20px;
+    }
+    .sectionHeadingText {
+        font-size: 40px;
+    }
+    .ourServicemainCon {
+        gap:4px;
+    }
+    .oterServiceCard {
+        box-sizing: border-box;
+        width: 90%;
+        min-height: unset;
+    }
+    .sectionSwitchingTabs {
+        width: 80%;
+    }
+    .mainImageContainer {
+        width: 90%;
+        margin: 24px auto;
+    }
+    .mainImageContainer img{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .mainAssertData{
+        margin-top: 24px;
+        padding: 10px;
+        gap: 16px;
+    }
+    .eachAssert {
+        width: 80%;
+    }
+     .stickyBtns a img {
+        width: 45px;
+        height: 45px;
+     }
+     .testmonialsCommon {
+        margin-top: 24px;
+     }
+     .eachestmonialwraper {
+        padding:16px;
+     }
+     .testmonislcmt {
+        font-size: 20px;
+     }
+     .personName,.persondesignatio {
+        margin: 5px auto;
+     }
+
+
+     .eachestmonialwraper {
+        box-shadow:0px 0px 10px rgba(0, 0, 0, .2) !important;
+     }
+
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {  
+    .mainContainer,.heromiddleContainer,.ourServicemainCon,.mainImageContainer,.mainAssertData,.testmonialsCommon,.stickybarMain {
+        width: 80%;
+    } 
+    .heromiddleContainer{
+        padding: 60px 0px;
+    }
+   
+}
+
+@media (min-width: 481px) and (max-width: 900px) {  
+    .buyersSection {
+        flex-direction: column;
+    }
+    .buyersSection .oterServiceCard {
+        width: 100%;
+        min-height: auto;
+    }
+    .sectionHeadingText {
+        font-size: 64px;
+    }
+   
+    .testmonialsCommon {
+        width: 100%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 480px){
+    .awssld__container {
+        height: 40px !important;
+     }
+}
+
+@media (min-width: 321px) and (max-width: 375px){
+    .awssld__container {
+        height: 120px !important;
+     }
+}
+
+
+@media (min-width: 121px) and (max-width: 320px){
+    .awssld__container {
+        height: 160px !important;
+     }
+     .eachestmonialwraper {
+        width: 80%;
+     }
+}

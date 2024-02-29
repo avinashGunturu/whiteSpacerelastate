@@ -1,0 +1,68 @@
+
+.stickybarcontainer {
+    margin-top: 120px;
+    margin-bottom: 0px;
+}
+.stickybarMain {
+    width: 60%;
+    margin: auto;
+}
+
+.stickyBtns{
+   background-color: #fff;
+   box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+   border-radius: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 60%;
+   margin: auto;
+} 
+
+.sticky-div {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0px;
+    padding: 20px;
+    z-index: 800; /* Adjust the z-index as needed to ensure it's above other content */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  
+    .stickyBtns {
+        width: 90%;
+    }
+    .stickybarMain {
+        width: 90%;
+       
+    }
+    .stickyBtns {
+        gap: 10px;
+        padding: 8px 16px;
+    }
+    .stickybarcontainer {
+        margin: 0px;
+        padding: 0px ;
+    }
+    .sticky-div {
+        bottom: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {  
+       .stickyBtns a img {
+        width: 70px;
+        height: 70px;
+       }
+}
+
+@media (min-width: 481px) and (max-width: 900px) {  
+    .stickyBtns a img {
+        width: 60px;
+        height: 60px;
+       }
+       .stickyBtns {
+        width: 80%;
+        padding: 10px 0px;
+       }
+}

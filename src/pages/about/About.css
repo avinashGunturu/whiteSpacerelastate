@@ -1,0 +1,183 @@
+.mainContentsec {
+    width: 60%;
+    margin: auto;
+    margin-top: 72px;
+}
+
+
+.fisrintroText , .secondIntroSection {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eachIntroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nametext {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Designationtext {
+    font-size: 24px;
+    color: #fa3131;
+}
+
+.wherestudied {
+    font-size: 20px;
+    color: #DA0000;
+}
+
+.abouttheySec {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.littlemaintext {
+    color: #fa3131;
+    font-weight: bold;
+}
+
+.emailid {
+    text-decoration: underline;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.socialmediaLinks {
+    margin-top: 16px;
+}
+.sociali {
+    width: 50px;
+    height: 50px;
+}
+
+.whatanyHelpSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.wanthelp {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.getcallbackbtn {
+    padding: 16px 18px;
+    background-color: #fa3131;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {  
+     .mainContentsec {
+        width: 90%;
+     }
+     .imgContainer {
+        width: 90%;
+     }
+     .imgContainer img {
+        width: 100%;
+     }
+     .eachIntroSection {
+        flex-direction: column;
+     }
+     .imageSection {
+        width: 90%;
+        margin: auto;
+     }
+     .imageSection img {
+        width: 100%;
+     }
+     .secondeachsection {
+        flex-direction: column-reverse;
+     }
+     .whatanyHelpSection {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 24px;
+     }
+     .fisrintroText, .secondIntroSection {
+        line-height: 30px;
+     }
+     
+ }
+
+ @media (min-width: 481px) and (max-width: 900px) {  
+    .mainContentsec {
+        width: 90%;
+     }
+     .imgContainer {
+        width: 90%;
+     }
+     .imgContainer img {
+        width: 100%;
+     }
+    .eachIntroSection {
+        flex-direction: column;
+     }
+     .imageSection {
+        width: 90%;
+        margin: auto;
+     }
+     .imageSection img {
+        width: 100%;
+     }
+     .secondeachsection {
+        flex-direction: column-reverse;
+     }
+     .whatanyHelpSection {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 24px;
+     }
+     .fisrintroText, .secondIntroSection {
+        line-height: 30px;
+     }
+ }
+
+ @media (min-width: 481px) and (max-width: 1024px) {  
+    .mainContentsec {
+        width: 90%;
+     }
+     .imgContainer {
+        width: 90%;
+     }
+     .imgContainer img {
+        width: 100%;
+     }
+    
+     .whatanyHelpSection {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 24px;
+     }
+     .fisrintroText, .secondIntroSection {
+        line-height: 30px;
+     }
+ }
