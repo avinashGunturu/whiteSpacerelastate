@@ -311,10 +311,12 @@
         padding:16px;
      }
      .testmonislcmt {
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 20px;
      }
      .personName,.persondesignatio {
         margin: 5px auto;
+        font-size: 16px;
      }
 
 
@@ -327,7 +329,18 @@
      .sellersSection, .buyersSection {
         margin-top: 28px;
      }
-
+     .cardHeading {
+        font-size: 24px;
+     }
+     .cardSubHeading {
+        font-size: 20px;
+     }
+     .buyersSection .oterServiceCard {
+        min-height: unset;
+     }
+     .ourServiceCard {
+        padding: 16px 16px 32px 16px;
+     }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {  

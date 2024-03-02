@@ -94,6 +94,7 @@
 }
 
 
+
 @media (min-width: 320px) and (max-width: 480px) {  
      .mainContentsec {
         width: 90%;
@@ -103,6 +104,7 @@
      }
      .imgContainer img {
         width: 100%;
+        margin-left: 30px;
      }
      .eachIntroSection {
         flex-direction: column;
@@ -124,7 +126,20 @@
      }
      .fisrintroText, .secondIntroSection {
         line-height: 30px;
+        font-size: 18px;
+        word-spacing: -4px;
      }
+     .mainContentsec {
+      margin-top: 32px;
+     }
+     .imgContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     .secondIntroSection {
+      word-spacing: -5px;
+   }
      
  }
 
@@ -157,8 +172,9 @@
         margin-top: 24px;
      }
      .fisrintroText, .secondIntroSection {
-        line-height: 30px;
+        line-height: 30px; word-spacing: -2px;
      }
+     
  }
 
  @media (min-width: 481px) and (max-width: 1024px) {  
@@ -170,6 +186,7 @@
      }
      .imgContainer img {
         width: 100%;
+        margin-left: 120px;
      }
     
      .whatanyHelpSection {
@@ -180,5 +197,7 @@
      .fisrintroText, .secondIntroSection {
         line-height: 30px;
         font-size: 18px;
+       
      }
+     
  }

@@ -85,7 +85,7 @@ const Callback = ({setIsHelp}) => {
             <p className="reqText">Request a call back</p>
             <p className="rcqsubheading">We are always ready. Just share your number for a call back</p>
             <div className="recactionCon">
-              <form className="recactionCon" ref={form} onSubmit={(e)=>!btnLoader ? handleCallClick(e): null}>
+              <form className="formcon" ref={form} onSubmit={(e)=>!btnLoader ? handleCallClick(e): null}>
                 <input type="text" placeholder='7028365040' name='phone_number'  onChange={(e)=>handleMobileNumberCheck(e)}  value={mobileNumber}/>
                 <div className="recCallme" type="submit" onClick={(e)=> !btnLoader ? handleCallClick(e): null }>
                   {

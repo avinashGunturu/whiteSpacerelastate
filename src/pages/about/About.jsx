@@ -54,13 +54,14 @@ const About = () => {
                      <p className="Designationtext">Co-founder- CEO</p>
                      <p className="wherestudied">Masters in Project Management (Eastern Michigan University, USA)</p>
                      <p className="wherestudied">Masters in Construction Management (Kent State University, Ohio, USA) </p>
+                     <p className="wherestudied">Second generation Realtor</p>
                      <p className="abouttheySec">“ <span className='littlemaintext'> White space </span>is not just about buying and selling properties – we are
 about building relationships and making dreams come true. Every
 interaction is an opportunity to make a positive impact in someone’s life.”</p>
-                            <p className="abouttheySec">I'm incredibly proud of the progress we&#39;ve made together, and I&#39;m
+                            {/* <p className="abouttheySec">I'm incredibly proud of the progress we&#39;ve made together, and I&#39;m
                             excited about the future. Let&#39;s keep up the great work, stay true to our
                             values of integrity, innovation, and collaboration, and continue to exceed
-                            expectations.</p>
+                            expectations.</p> */}
                      <a href="mailto:sravankreddy1917@gmail.com" className="emailid">
                      sravankreddy1917@gmail.com
                      </a>
