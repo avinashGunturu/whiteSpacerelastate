@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState,useRef} from 'react'
+import emailjs from '@emailjs/browser';
 import './Callbak.css'
 const Callback = ({setIsHelp}) => {
     
@@ -8,20 +9,20 @@ const Callback = ({setIsHelp}) => {
    
     const [mobileNumber,setMobileNumber] = useState("")
     const [mobileerror,setMobileError] = useState("")
+    const [btnLoader,setBtnLoader] = useState(false)
 
     const handleCross = ()=> {
       setIsHelp(false)
       setOverly(false)
     }
 
-    const handleCallClick = () => {
-
+    const handleCallClick = (e) => {
+      setBtnLoader(true)
       if(mobileNumber === "" || mobileNumber === null || mobileNumber === undefined || mobileNumber.length < 10){
         setMobileError("Please Enter a valid Mobile Number")
+        setBtnLoader(false)
       }else {
-        setThankyou(true)
-        setOverly(true)
-        setRcb(false)
+        sendEmail(e) 
       }
     }
 
@@ -39,6 +40,37 @@ const Callback = ({setIsHelp}) => {
       setMobileNumber(limitedInput);
     }
 
+  const YOUR_SERVICE_ID = "service_9qtf8ki"
+  const YOUR_TEMPLATE_ID ="template_3wdmbkv"
+  const YOUR_PUBLIC_KEY = "HqLcdXmMlLqXfcDNr"
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm(YOUR_SERVICE_ID,  YOUR_TEMPLATE_ID, form.current, {
+          publicKey: YOUR_PUBLIC_KEY,
+        })
+        .then(
+          () => {
+            setThankyou(true)
+            setOverly(true)
+            setRcb(false)
+            setBtnLoader(false)
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            setThankyou(false)
+            setOverly(true)
+            setRcb(true)
+            setMobileError("Please close and try again.")
+            setBtnLoader(false)
+          },
+        );
+    };
+
   return (
     <>
     {
@@ -53,8 +85,17 @@ const Callback = ({setIsHelp}) => {
             <p className="reqText">Request a call back</p>
             <p className="rcqsubheading">We are always ready. Just share your number for a call back</p>
             <div className="recactionCon">
-                <input type="text" placeholder='7028365040'  onChange={(e)=>handleMobileNumberCheck(e)}  value={mobileNumber}/>
-                <div className="recCallme" onClick={handleCallClick}>Call me</div>
+              <form className="recactionCon" ref={form} onSubmit={(e)=>!btnLoader ? handleCallClick(e): null}>
+                <input type="text" placeholder='7028365040' name='phone_number'  onChange={(e)=>handleMobileNumberCheck(e)}  value={mobileNumber}/>
+                <div className="recCallme" type="submit" onClick={(e)=> !btnLoader ? handleCallClick(e): null }>
+                  {
+                    btnLoader ? 
+                    // 
+                    "Loading.."
+                    : "Call Me"
+                  }
+                </div> 
+              </form>
             </div> 
             {
               mobileerror ? <p className="mobilerror">{mobileerror}</p> : null
