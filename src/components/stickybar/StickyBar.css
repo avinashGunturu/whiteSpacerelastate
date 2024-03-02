@@ -51,8 +51,8 @@
 
 @media (min-width: 481px) and (max-width: 1024px) {  
        .stickyBtns a img {
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
        }
 }
 

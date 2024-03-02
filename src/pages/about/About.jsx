@@ -79,7 +79,7 @@ interaction is an opportunity to make a positive impact in someone’s life.”<
                  <div className="textSection">
                      <p className="nametext">Santosh Gade</p>
                      <p className="Designationtext">CO founder – CMO</p>
-                     <p className="wherestudied">MBA in Digital Marketing - DY Patil group School of Management pune.</p>
+                     <p className="wherestudied">MBA in Digital Marketing - DY Patil group School of Management, Pune.</p>
                      <p className="abouttheySec">“As the CMO, I drive sales and elevate your brand in real estate.Through
 strategic storytelling and client engagement, we showcase our expertise
 and build lasting connections.”</p>
