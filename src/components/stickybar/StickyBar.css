@@ -55,6 +55,12 @@
         height: 55px;
        }
 }
+@media (min-width: 1025px) and (max-width: 1350px) {  
+    .stickyBtns a img {
+     width: 55px;
+     height: 55px;
+    }
+}
 
 @media (min-width: 481px) and (max-width: 900px) {  
     .stickyBtns a img {
