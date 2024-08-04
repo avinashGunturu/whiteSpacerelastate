@@ -11,7 +11,7 @@ const Contactus = ({setIsContactUS}) => {
           </div>
           <div className="requestcallBackCon">
             <p className="reqText">Contact Us</p>
-            <p className="rcqsubheading">Address - plot no - 168, Lectures colony, Hayathnagar telangana-501505.</p>
+            <p className="rcqsubheading">Abhinav Enclave Chaitanya Enclave, Khajaguda, Makthakousarali,Telangana 500075</p>
             <p className="rcqsubheading">contact detail- 7028365040</p>
             <p className="rcqsubheading">Email id- whitespacerealestate.in@gmail.com</p>
           </div>
